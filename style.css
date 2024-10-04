@@ -136,3 +136,132 @@ ul{
     font-weight: bold;
     margin-top: 10px;
 }
+
+.content{
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-columns: 3fr 1fr;
+    background-color: #c3c3c3
+}
+
+#content_header{
+    grid-row: 1/2;
+    grid-column:1/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: end;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+#card_container{
+    grid-row: 2/4;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: #c3c3c3
+}
+
+.announcement_card{
+    background-color: white;
+    margin-left:5px;
+    height: 30%;
+    margin-right: 30px;
+    border-radius: 5px;
+    border: 2px solid rgb(157, 157, 0);
+    margin-top: 5px;
+}
+
+.card{
+    background-color: white;
+    margin: 15px;
+    margin-left:25px;
+    margin-top: 0px;
+    border-radius: 5px;
+    box-shadow: -5px 0px rgb(157, 157, 0);
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.card_title{
+    grid-row: 1/2;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.announcement_card_title{
+    font-weight: bolder;
+    font-size: 16px;
+    margin:10px;
+}
+
+.announcement_card_text{
+    margin: 10px;
+    font-size: 10px;
+}
+
+.card_text{
+    grid-row: 2/3;
+    margin-left: 20px;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.card_icons{
+    grid-row: 3/4;
+    display:flex;
+    justify-content: right;
+}
+
+.card_icons .content_icon{
+    margin-right: 30px;
+    margin-left: 0px;
+}
+
+#announcement_container{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+#trending_container{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+#trending_header{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.trending_card{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    background-color: white;
+    align-items: center;
+    margin-right: 30px;
+    border-radius: 5px;
+    border: 2px solid rgb(157, 157, 0);
+    margin-top: 5px;
+}
+
+.trending_name{
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.trending_description{
+    font-weight: lighter;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
